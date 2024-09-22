@@ -71,3 +71,42 @@ document.getElementById('donate-now-btn3').addEventListener('click', function(){
 });
 
 
+// history button functionality 
+
+const donationBtn = document.getElementById('btn-donation');
+const historyBtn = document.getElementById('btn-history');
+historyBtn.addEventListener('click', function(){
+    historyBtn.classList.add(
+        "bg-primary",
+        "text-textcolor" );
+    historyBtn.classList.remove('text-textcolor1')
+    donationBtn.classList.remove(
+        "bg-primary",
+        "text-textcolor"
+    );
+    donationBtn.classList.add(
+        "bg-pri",
+        "text-textcolor1",
+        "border"
+    )
+
+    document.getElementById('donation-sec').classList.add('hidden')
+
+});
+
+document.getElementById('btn-donation').addEventListener('click', function(){
+    document.getElementById('donation-sec').classList.remove('hidden')
+    donationBtn.classList.add(
+        "bg-primary",
+        "text-textcolor" );
+    donationBtn.classList.remove('text-textcolor1')
+    historyBtn.classList.remove(
+        "bg-primary",
+        "text-textcolor"
+    );
+    historyBtn.classList.add(
+        "bg-pri",
+        "text-textcolor1",
+        "border"
+    )
+});
