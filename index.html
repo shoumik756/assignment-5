@@ -17,8 +17,10 @@
                 extend: {
                     colors: {
                         
-                        primary: '#212121',
-                        textcolor: '#494949',
+                        primary: '#B4F461',
+                        textcolor: '#111111',
+                        textcolor1: '#575755',
+                        pri: '#f9f9f9'
                     },
                     fontFamily: {
                         lexend: ['Lexend', 'sans-serif'],
@@ -30,7 +32,7 @@
 </head>
 <body class="font-lexend">
     <!-- navbar start -->
-     <header class=" top-0 ">
+     <header class="sticky top-0 ">
         <nav class="bg-[#f9f7f3]">
             <div class="flex  items-center justify-between pt-6 pb-16 max-w-screen-xl  lg:mx-auto">
                 <div>
@@ -47,17 +49,18 @@
                 </div>
             </div>
          </nav>
-         <menu class="flex justify-center items-center my-20 gap-5 pb-5">
-            <button class="bg-[#B4F461] w-[160px] h-[60px] rounded-lg font-semibold text-[20px] text-[#111111]">Donation</button>
-            <button class="w-[160px] h-[60px] rounded-lg font-semibold text-[20px] text-[#575755] border-[1px]">History</button>
-         </menu>
+         <section class="backdrop-blur-3xl bg-transparent flex justify-center  items-center gap-5 py-10 ">
+            <button id="btn-donation" class="bg-primary w-[160px] h-[60px] rounded-lg font-semibold text-[20px] text-textcolor">Donation</button>
+            <button id="btn-history" class="bg-pri w-[160px] h-[60px] rounded-lg font-semibold text-[20px] text-textcolor1 border-[1px]">History</button>
+         </section>
      </header>
     <!-- navbar end -->
 
     <!-- main start -->
-     <main  class="max-w-screen-xl  lg:mx-auto">
+    
+     <main  class="max-w-screen-xl  lg:mx-auto mt-10 ">
         <!-- Donation section -->
-        <section>
+        <section id="donation-sec">
             <div>
                 <!-- row-1 -->
                 <div class="grid lg:flex md:flex md:gap-5 lg:gap-5 p-6 border-[1px] ml-6 mr-0 rounded-2xl">
