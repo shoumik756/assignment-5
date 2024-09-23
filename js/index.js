@@ -27,7 +27,7 @@ document.getElementById('donate-now-btn').addEventListener('click', function(){
 
     // added to history list
     const historyList = document.createElement('div');
-    historyList.className = "p-8 border-[1px] ml-6 mr-0 mb-6 rounded-2xl";
+    historyList.className = "p-8 border-[1px] mx-5 mb-6 rounded-2xl";
     historyList.innerHTML = `
     
         <p class="text-2xl font-bold">${inputFliedValue} Taka is Donated for famine-2024 at Noakhali, Bangladesh</p>
@@ -67,7 +67,7 @@ document.getElementById('donate-now-btn2').addEventListener('click', function(){
 
      // added to history list
      const historyList = document.createElement('div');
-     historyList.className = "p-8 border-[1px] ml-6 mr-0 mb-6 rounded-2xl";
+     historyList.className = "p-8 border-[1px] mx-5 mb-6 rounded-2xl";
      historyList.innerHTML = `
      
          <p class="text-2xl font-bold">${inputFliedValue2} Taka is Donated for Flood Relief in Feni,Bangladesh</p>
@@ -106,7 +106,7 @@ document.getElementById('donate-now-btn3').addEventListener('click', function(){
 
     // added to history list
     const historyList = document.createElement('div');
-    historyList.className = "p-8 border-[1px] ml-6 mr-0 mb-6 rounded-2xl";
+    historyList.className = "p-8 border-[1px] mx-5 mb-6 rounded-2xl";
     historyList.innerHTML = `
     
         <p class="text-2xl font-bold">${inputFliedValue3} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
