@@ -19,7 +19,7 @@ document.getElementById('donate-now-btn').addEventListener('click', function(){
 
     const totalDonated = inputFliedValue + myTotalDonatedBalance;
 
-    document.getElementById('total-donated-balance').innerText = totalDonated;
+    document.getElementById('total-donated-balance').innerText = totalDonated.toFixed(2);
 
     const currentBalanceValue = myCurrentBalance();
     const currentBalance = currentBalanceValue - inputFliedValue;
@@ -62,7 +62,7 @@ document.getElementById('donate-now-btn2').addEventListener('click', function(){
 
     const totalDonated2 = inputFliedValue2 + myTotalDonatedBalance2;
 
-    document.getElementById('total-donated-balance2').innerText = totalDonated2;
+    document.getElementById('total-donated-balance2').innerText = totalDonated2.toFixed(2);
     
     const currentBalanceValue = myCurrentBalance();
     const currentBalance = currentBalanceValue - inputFliedValue2;
@@ -105,7 +105,7 @@ document.getElementById('donate-now-btn3').addEventListener('click', function(){
 
     const totalDonated3 = inputFliedValue3 + myTotalDonatedBalance3;
 
-    document.getElementById('total-donated-balance3').innerText = totalDonated3;
+    document.getElementById('total-donated-balance3').innerText = totalDonated3.toFixed(2);
     
     const currentBalanceValue = myCurrentBalance();
     const currentBalance = currentBalanceValue - inputFliedValue3;
