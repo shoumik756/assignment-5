@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- google font cdn-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- DaisyUi and tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+
+                        primary: '#B4F461',
+                        textcolor: '#111111',
+                        textcolor1: '#575755',
+                        pri: '#f9f9f9'
+                    },
+                    fontFamily: {
+                        lexend: ['Lexend', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="font-lexend">
+    <header class="sticky top-0 ">
+        <nav class="bg-[#f9f7f3]">
+            <div
+                class=" flex items-center justify-between flex-row space-y-5  lg:flex lg:items-center lg:justify-between lg:flex-row md:flex md:items-center md:justify-between md:flex-row pt-6 px-5 pb-16 max-w-screen-xl  lg:mx-auto">
+                <div>
+                    <button id="home-page"
+                        class="bg-[#B4F461]  h-16 w-32 rounded-lg font-bold text-[20px] text-textcolor">Home</button>
+                </div>
+                <div class="flex justify-center items-center gap-4">
+                    <img class="size-10  mb-5" src="assets/logo.png" alt="">
+                    <h4 class="font-bold text-[20px] text-textcolor lg:flex md:flex hidden ">Donate Bangladesh</h4>
+                </div>
+                <div class="flex gap-2 ">
+                    <img class="w-[28px] h-[28px]" src="assets/coin.png" alt="">
+                    <span id="current-balance" class="text-[#575755] font-semibold text-[20px]">5500</span>
+                    <p class="text-[#575755] font-semibold text-[20px]"> BDT</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- blog  -->
+    <section class="flex gap-5 max-w-screen-xl lg:mx-auto mt-20">
+        <div class="w-1/2 border-[1px] p-10 rounded-2xl shadow-lg	">
+            <img src="assets/faq.jpg" alt="">
+        </div>
+        <div class="w-1/2 border-[1px] p-10 rounded-2xl shadow-lg	">
+           <h2 class="text-[24px] font-medium mb-5">What is the Document Object Model (DOM)?</h2>
+           <p class="text-[16px] font-light mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam enim itaque ducimus et id omnis debitis cupiditate fugit magni reprehenderit.</p>
+           <h2 class="text-[24px] font-medium mb-5">What is the Document Object Model (DOM)?</h2>
+           <p class="text-[16px] font-light mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam enim itaque ducimus et id omnis debitis cupiditate fugit magni reprehenderit.</p>
+           <h2 class="text-[24px] font-medium mb-5">What is the Document Object Model (DOM)?</h2>
+           <p class="text-[16px] font-light mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam enim itaque ducimus et id omnis debitis cupiditate fugit magni reprehenderit.</p>
+           <h2 class="text-[24px] font-medium mb-5">What is the Document Object Model (DOM)?</h2>
+           <p class="text-[16px] font-light mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam enim itaque ducimus et id omnis debitis cupiditate fugit magni reprehenderit.</p>
+        </div>
+        
+    </section>
+
+
+
+
+
+
+
+
+    <!-- footer start -->
+    <footer class="bg-[#f9f7f3] h-[120px] mt-20">
+
+
+    </footer>
+    <!-- footer end -->
+    <!-- home page reditection js -->
+    <script>
+        document.getElementById('home-page').addEventListener('click', function () {
+            window.location.href = '/index.html';
+            console.log('click');
+
+        });
+    </script>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

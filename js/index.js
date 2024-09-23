@@ -158,3 +158,5 @@ document.getElementById('btn-donation').addEventListener('click', function(){
     )
     document.getElementById('history-sec').classList.add('hidden')
 });
+
+
