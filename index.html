@@ -36,7 +36,8 @@
     <!-- navbar start -->
     <header class="sticky top-0 ">
         <nav class="bg-[#f9f7f3]">
-            <div class=" flex items-center justify-between flex-row space-y-5  lg:flex lg:items-center lg:justify-between lg:flex-row md:flex md:items-center md:justify-between md:flex-row pt-6 px-5 pb-16 max-w-screen-xl  lg:mx-auto">
+            <div
+                class=" flex items-center justify-between flex-row space-y-5  lg:flex lg:items-center lg:justify-between lg:flex-row md:flex md:items-center md:justify-between md:flex-row pt-6 px-5 pb-16 max-w-screen-xl  lg:mx-auto">
                 <div>
                     <button id="blog-page"
                         class="bg-[#B4F461]  h-16 w-32 rounded-lg font-semibold text-[20px] text-[#111111]">Blog</button>
@@ -88,7 +89,7 @@
                         <input id="donation-input-field"
                             class="pl-5 border-[1px] w-full h-14 rounded-lg placeholder:text-[15px]" type="text"
                             placeholder="Write Donation Amount">
-                        <button id="donate-now-btn"
+                        <button id="donate-now-btn" onclick="my_modal_5.showModal()" 
                             class="bg-[#B4F461] mt-7 h-14 w-full rounded-lg font-semibold text-[20px] text-[#111111]">Donate
                             Now</button>
                     </div>
@@ -116,7 +117,7 @@
                         <input id="donation-input-field2"
                             class=" pl-5 border-[1px] w-full h-14 rounded-lg placeholder:text-[15px]" type="text"
                             placeholder="Write Donation Amount">
-                        <button id="donate-now-btn2"
+                        <button id="donate-now-btn2" onclick="my_modal_5.showModal()" 
                             class="bg-[#B4F461] mt-7 h-14 w-full rounded-lg font-semibold text-[20px] text-[#111111]">Donate
                             Now</button>
                     </div>
@@ -145,19 +146,39 @@
                         <input id="donation-input-field3"
                             class="pl-5 border-[1px] w-full h-14 rounded-lg placeholder:text-[15px]" type="text"
                             placeholder="Write Donation Amount">
-                        <button id="donate-now-btn3"
+                        <button id="donate-now-btn3" onclick="my_modal_5.showModal()" 
                             class="bg-[#B4F461] mt-7 h-14 w-full rounded-lg font-semibold text-[20px] text-[#111111]">Donate
                             Now</button>
                     </div>
                 </div>
 
             </div>
+
+
+            <!-- modal start -->
+            <!-- Open the modal using ID.showModal() method -->
+            
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box flex justify-center items-center flex-col	">
+                    <h3 class="text-5xl font-bold mb-5">Congrates!</h3>
+                    <img class="size-10 mb-5" src="assets/coin.png" alt="">
+                    <p class="pb-8 text-base">You have Donate for Humankind</p>
+                    <p class="text-xl font-bold">Successfully</p>
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn">Close Confirmation</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+            <!-- modal end -->
         </section>
 
         <!-- Histroy Section -->
 
         <div id="history-sec" class="hidden">
-            
+
             <div id="history-list" class="grid grid-cols-1">
 
             </div>
@@ -173,14 +194,14 @@
     </footer>
     <!-- footer end -->
 
-<!-- blog page reditection js -->
-<script>
-    document.getElementById('blog-page').addEventListener('click', function(){
-    window.location.href = '/blog.html';
-    console.log('click');
-    
-});
-</script>
+    <!-- blog page reditection js -->
+    <script>
+        document.getElementById('blog-page').addEventListener('click', function () {
+            window.location.href = 'blog.html';
+            console.log('click');
+
+        });
+    </script>
 
 
     <script src="./js/utilities.js"></script>
