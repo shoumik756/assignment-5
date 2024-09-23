@@ -156,4 +156,5 @@ document.getElementById('btn-donation').addEventListener('click', function(){
         "text-textcolor1",
         "border"
     )
+    document.getElementById('history-sec').classList.add('hidden')
 });
