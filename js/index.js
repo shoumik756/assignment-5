@@ -8,7 +8,7 @@ document.getElementById('donate-now-btn').addEventListener('click', function(){
         alert('Invalid Number');
         return
     }
-    if(isNaN(inputFliedValue) ){
+    if(isNaN(inputFliedValue) || inputFliedValue === "" ){
         alert('You have entered an invalid number');
         return
     }
@@ -35,6 +35,9 @@ document.getElementById('donate-now-btn').addEventListener('click', function(){
     `;
     const historyListContainer = document.getElementById('history-list');
     historyListContainer.insertBefore(historyList, historyListContainer.firstChild);
+
+    const myModal = document.getElementById('my_modal_5');
+    myModal.showModal()
     
 });
 
@@ -48,7 +51,7 @@ document.getElementById('donate-now-btn2').addEventListener('click', function(){
         alert('Invalid Number');
         return
     }
-    if(isNaN(inputFliedValue2) ){
+    if(isNaN(inputFliedValue2) || inputFliedValue2 === ""){
         alert('You have entered an invalid number');
         return
     }
@@ -75,6 +78,9 @@ document.getElementById('donate-now-btn2').addEventListener('click', function(){
      `;
      const historyListContainer = document.getElementById('history-list');
      historyListContainer.insertBefore(historyList, historyListContainer.firstChild);
+
+     const myModal = document.getElementById('my_modal_5');
+    myModal.showModal()
 });
 
 // for 3rd card
@@ -87,7 +93,7 @@ document.getElementById('donate-now-btn3').addEventListener('click', function(){
         alert('Invalid Number');
         return
     }
-    if(isNaN(inputFliedValue3) ){
+    if(isNaN(inputFliedValue3) || inputFliedValue3 === ""){
         alert('You have entered an invalid number');
         return
     }
@@ -95,6 +101,7 @@ document.getElementById('donate-now-btn3').addEventListener('click', function(){
         alert ('You Have Insufficient Balance For Donation');
         return
     }
+    
 
     const totalDonated3 = inputFliedValue3 + myTotalDonatedBalance3;
 
@@ -115,7 +122,8 @@ document.getElementById('donate-now-btn3').addEventListener('click', function(){
     const historyListContainer = document.getElementById('history-list');
     historyListContainer.insertBefore(historyList, historyListContainer.firstChild);
     
-    
+    const myModal = document.getElementById('my_modal_5');
+    myModal.showModal()
 });
 
 
