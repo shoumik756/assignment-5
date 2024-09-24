@@ -35,9 +35,7 @@ document.getElementById('donate-now-btn').addEventListener('click', function(){
     const historyListContainer = document.getElementById('history-list');
     historyListContainer.insertBefore(historyList, historyListContainer.firstChild);
 
-    const myModal = document.getElementById('my_modal_5');
-    myModal.showModal()
-
+    document.getElementById('my_modal_5').showModal();
     document.getElementById('donation-input-field').value = '';
     
 });
@@ -80,9 +78,7 @@ document.getElementById('donate-now-btn2').addEventListener('click', function(){
      const historyListContainer = document.getElementById('history-list');
      historyListContainer.insertBefore(historyList, historyListContainer.firstChild);
 
-     const myModal = document.getElementById('my_modal_5');
-    myModal.showModal()
-
+    document.getElementById('my_modal_5').showModal();
     document.getElementById('donation-input-field2').value = '';
 });
 
@@ -125,9 +121,7 @@ document.getElementById('donate-now-btn3').addEventListener('click', function(){
     const historyListContainer = document.getElementById('history-list');
     historyListContainer.insertBefore(historyList, historyListContainer.firstChild);
     
-    const myModal = document.getElementById('my_modal_5');
-    myModal.showModal()
-
+    document.getElementById('my_modal_5').showModal();
     document.getElementById('donation-input-field3').value = '';
 });
 
