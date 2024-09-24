@@ -3,7 +3,6 @@ document.getElementById('donate-now-btn').addEventListener('click', function(){
     
     const inputFliedValue = getDonationInputFliedValues();
     const myTotalDonatedBalance = getTotalDonatedbalance ();
-
     if(inputFliedValue <= 0 ){
         alert('Invalid Number');
         return
@@ -38,6 +37,8 @@ document.getElementById('donate-now-btn').addEventListener('click', function(){
 
     const myModal = document.getElementById('my_modal_5');
     myModal.showModal()
+
+    document.getElementById('donation-input-field').value = '';
     
 });
 
@@ -81,6 +82,8 @@ document.getElementById('donate-now-btn2').addEventListener('click', function(){
 
      const myModal = document.getElementById('my_modal_5');
     myModal.showModal()
+
+    document.getElementById('donation-input-field2').value = '';
 });
 
 // for 3rd card
@@ -124,6 +127,8 @@ document.getElementById('donate-now-btn3').addEventListener('click', function(){
     
     const myModal = document.getElementById('my_modal_5');
     myModal.showModal()
+
+    document.getElementById('donation-input-field3').value = '';
 });
 
 
